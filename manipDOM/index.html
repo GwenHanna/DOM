@@ -9,7 +9,7 @@
 </head>
 <body>
     <section>
-        <div id="zoom">
+        <div id="zoom" style="display: none;">
             <span>X</span>
             <img src="" alt="">
         </div>
@@ -44,14 +44,18 @@
         <form action="#">
             <h2>Formulaire</h2>
             <div id="pseudo">
-                <input type="text" name="user name" id="name" required placeholder="Nom : ">
+                <input type="text" name="user-name" id="name" required placeholder="Nom : ">
+                <p class="valid-feedback">Le Pseudo doit contenir au minimum 5 caractère.</p>
             </div>
             <div class="email">
-                <input type="email" name="user mail" id="mail" placeholder="Email : " required>
+                <input type="email" name="user-mail" id="mail" placeholder="Email : " required>
+                <p class="valid-mail"></p>
             </div>
             <div class="email">
                 <p class="confirmed">Veuillez confirmez votre Email</p>
-                <input type="email" name="user mail" id="mail2" placeholder="Confirmation de votre mail" required>
+                <input type="email" name="user-confirm" id="mail2" placeholder="Confirmation de votre mail" required>
+                <p class=""></p>
+
             </div>
             <input type="submit" name="register" id="register" value="Enregistrer">
         </form>
